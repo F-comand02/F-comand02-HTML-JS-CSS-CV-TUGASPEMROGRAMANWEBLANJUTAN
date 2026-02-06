@@ -948,7 +948,7 @@
             observer.observe(el);
         });
 
-        // Typing effect for home section
+        
         const titleElement = document.querySelector('.title');
         const titleText = 'Frontend Developer';
         let index = 0;
@@ -961,13 +961,13 @@
             }
         }
 
-        // Start typing effect when page loads
+        
         window.addEventListener('load', () => {
             titleElement.textContent = '';
             setTimeout(typeWriter, 500);
         });
 
-        // Scroll indicator click
+        
         document.querySelectorAll('.scroll-indicator').forEach(indicator => {
             indicator.addEventListener('click', () => {
                 const currentSection = indicator.closest('section');
@@ -979,7 +979,7 @@
             });
         });
 
-        // Add loading animation
+        
         window.addEventListener('load', () => {
             document.body.style.opacity = '0';
             setTimeout(() => {
@@ -988,7 +988,7 @@
             }, 100);
         });
 
-        // Console welcome message
+
         console.log('%c Welcome to my Portfolio! ', 'background: #353535; color: #fff; padding: 10px; font-size: 16px;');
         console.log('%c Built with HTML, CSS, and JavaScript ', 'background: #555; color: #fff; padding: 5px; font-size: 12px;');
     </script>
