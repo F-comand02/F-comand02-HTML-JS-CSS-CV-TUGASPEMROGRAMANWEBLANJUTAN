@@ -1,5 +1,5 @@
 /* =========================================================
-   RESET & FUTURISTIC BASE
+   Ini Reset & Base
    ========================================================= */
 *,
 *::before,
@@ -10,7 +10,7 @@
 }
 
 /* =========================================================
-   ROOT VARIABLES
+   Alat Root
    ========================================================= */
 :root {
     --bg-main: #0a0a0a;
@@ -34,7 +34,7 @@
 }
 
 /* =========================================================
-   HTML & BODY
+   HTML & Body
    ========================================================= */
 html {
     scroll-behavior: smooth;
@@ -67,7 +67,7 @@ body {
 }
 
 /* =========================================================
-   GLOBAL ELEMENTS
+   Element Global
    ========================================================= */
 img {
     max-width: 100%;
@@ -92,7 +92,7 @@ section {
 }
 
 /* =========================================================
-   SELECTION & SCROLLBAR (optional but premium)
+   SELECTION & SCROLLBAR 
    ========================================================= */
 ::selection {
     background: rgba(255,255,255,.2);
@@ -119,7 +119,7 @@ section {
 
 
 /* =========================================================
-   FUTURISTIC NAVBAR
+   Bagian Navbar
    ========================================================= */
 .futuristic-nav {
     position: fixed;
@@ -144,7 +144,6 @@ section {
     padding: .9rem 1.8rem;
 }
 
-/* Brand */
 .nav-brand {
     font-size: 1.4rem;
     font-weight: 600;
@@ -157,7 +156,6 @@ section {
     opacity: .6;
 }
 
-/* Menu */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -193,7 +191,6 @@ section {
     width: 100%;
 }
 
-/* Hamburger */
 .nav-toggle {
     display: none;
     width: 32px;
@@ -212,7 +209,7 @@ section {
 }
 
 /* =========================================================
-   SCROLLED STATE
+   Skroll
    ========================================================= */
 .futuristic-nav.scrolled {
     background: rgba(10,10,10,.85);
@@ -222,50 +219,7 @@ section {
 }
 
 /* =========================================================
-   MOBILE
-   ========================================================= */
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: fixed;
-        inset: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: transparent;
-        gap: 2.5rem;
-        transform: scale(1.1);
-        opacity: 0;
-        pointer-events: none;
-        transition: .4s;
-    }
-
-    .nav-menu.active {
-        transform: scale(1);
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .nav-link {
-        font-size: 1.4rem;
-    }
-
-    /* Hamburger animation */
-    .nav-toggle.active span:first-child {
-        transform: rotate(45deg) translateY(8px);
-    }
-
-    .nav-toggle.active span:last-child {
-        transform: rotate(-45deg) translateY(-8px);
-    }
-}
-
-
-/* =========================================================
-   SECTION GLOBAL
+   Bagian Section Global
    ========================================================= */
 section {
     min-height: 100vh;
@@ -286,7 +240,6 @@ section {
     margin-bottom: 3rem;
 }
 
-/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -298,7 +251,7 @@ section {
 }
 
 /* =========================================================
-   FUTURISTIC HOME
+   HOME
    ========================================================= */
 .futuristic-home {
     background:
@@ -317,7 +270,7 @@ section {
 }
 
 /* =========================================================
-   VISUAL / AVATAR
+   Bagian Visual
    ========================================================= */
 .profile-orbit {
     position: relative;
@@ -341,7 +294,6 @@ section {
         0 0 60px rgba(255,255,255,.25);
 }
 
-/* Orbit ring */
 .profile-orbit .orbit {
     position: absolute;
     inset: 0;
@@ -351,7 +303,7 @@ section {
 }
 
 /* =========================================================
-   TEXT CONTENT
+   Bagian Info
    ========================================================= */
 .home-info {
     max-width: 520px;
@@ -388,7 +340,7 @@ section {
 }
 
 /* =========================================================
-   ACTIONS
+   Bagian Aksi & Pernyataan
    ========================================================= */
 .hero-actions {
     display: flex;
@@ -421,40 +373,7 @@ section {
 }
 
 /* =========================================================
-   ANIMATION
-   ========================================================= */
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-@media (max-width: 768px) {
-    .home-futuristic {
-        text-align: center;
-    }
-
-    .hero-actions,
-    .hero-social {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-name {
-        font-size: 2.5rem;
-    }
-
-    .profile-orbit {
-        width: 280px;
-    }
-}
-
-
-/* =========================================================
-   FUTURISTIC ABOUT
+   Bagian ABOUT
    ========================================================= */
 .futuristic-about {
     background:
@@ -463,7 +382,6 @@ section {
     color: #fff;
 }
 
-/* Grid */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -472,7 +390,7 @@ section {
 }
 
 /* =========================================================
-   IMAGE
+   About-Gambar
    ========================================================= */
 .about-frame {
     position: relative;
@@ -502,7 +420,7 @@ section {
 }
 
 /* =========================================================
-   CONTENT
+   Isi Website Bagian About
    ========================================================= */
 .section-title.light {
     color: #fff;
@@ -553,7 +471,6 @@ section {
         0 0 25px rgba(255,255,255,.2);
 }
 
-/* Text */
 .about-text {
     font-size: .95rem;
     line-height: 1.9;
@@ -562,16 +479,7 @@ section {
 }
 
 /* =========================================================
-   RESPONSIVE
-   ========================================================= */
-@media (max-width: 768px) {
-    .about-grid {
-        text-align: center;
-    }
-}
-
-/* =========================================================
-   FUTURISTIC EXPERIENCE
+   Bagian EXPERIENCE
    ========================================================= */
 .futuristic-experience {
     background:
@@ -580,7 +488,6 @@ section {
     color: #fff;
 }
 
-/* Grid */
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -589,7 +496,6 @@ section {
     margin-inline: auto;
 }
 
-/* Card */
 .exp-card {
     padding: 2.5rem;
     border-radius: 2rem;
@@ -615,7 +521,6 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Skills */
 .exp-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -645,16 +550,6 @@ section {
 }
 
 /* =========================================================
-   RESPONSIVE
-   ========================================================= */
-@media (max-width: 768px) {
-    .exp-skills {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* =========================================================
    FUTURISTIC PROJECTS
    ========================================================= */
 .projects-section.futuristic {
@@ -673,7 +568,6 @@ section {
     gap: 2.5rem;
 }
 
-/* Card */
 .futuristic-card {
     position: relative;
     background: rgba(255,255,255,0.05);
@@ -714,7 +608,6 @@ section {
     opacity: 1;
 }
 
-/* Image */
 .futuristic-card .project-image {
     border-radius: 1.2rem;
     overflow: hidden;
@@ -732,14 +625,12 @@ section {
     transform: scale(1.08);
 }
 
-/* Text */
 .project-desc {
     font-size: .95rem;
     opacity: .85;
     margin: .8rem 0 1.5rem;
 }
 
-/* Buttons */
 .project-actions {
     display: flex;
     justify-content: center;
@@ -768,7 +659,7 @@ section {
 }
 
 /* =========================================================
-   FUTURISTIC CONTACT
+   Bagian CONTACT
    ========================================================= */
 .contact-section.futuristic {
     background:
@@ -782,7 +673,6 @@ section {
     color: #fff;
 }
 
-/* Container */
 .futuristic-contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -791,7 +681,6 @@ section {
     margin: 3rem auto 0;
 }
 
-/* Glass Card */
 .contact-glass {
     display: flex;
     align-items: center;
@@ -811,7 +700,7 @@ section {
     overflow: hidden;
 }
 
-/* Glow line */
+
 .contact-glass::before {
     content: "";
     position: absolute;
@@ -839,7 +728,6 @@ section {
         0 0 35px rgba(255,255,255,.35);
 }
 
-/* Icon */
 .contact-glass i {
     font-size: 2.2rem;
     min-width: 40px;
@@ -849,7 +737,6 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-/* Text */
 .contact-glass span {
     font-size: .85rem;
     opacity: .7;
@@ -861,22 +748,8 @@ section {
     font-weight: 500;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-    .contact-glass {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .contact-glass div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 /* =========================================================
-   FUTURISTIC FOOTER
+   Bagian FOOTER
    ========================================================= */
 .futuristic-footer {
     background:
@@ -898,7 +771,6 @@ section {
     box-shadow: 0 20px 50px rgba(0,0,0,.6);
 }
 
-/* Brand */
 .footer-brand h3 {
     font-size: 1.6rem;
     margin-bottom: .5rem;
@@ -910,7 +782,6 @@ section {
     max-width: 300px;
 }
 
-/* Links */
 .footer-links {
     list-style: none;
     display: grid;
@@ -929,7 +800,6 @@ section {
     transform: translateX(6px);
 }
 
-/* Social */
 .footer-social {
     display: flex;
     gap: 1rem;
@@ -955,78 +825,9 @@ section {
         0 0 40px rgba(255,255,255,.6);
 }
 
-/* Copyright */
 .footer-copy {
     margin-top: 2.5rem;
     text-align: center;
     font-size: .85rem;
     opacity: .6;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    .footer-glass {
-        text-align: center;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-}
-
-
-/* =========================================================
-   ANIMATION & RESPONSIVE
-   ========================================================= */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    40% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-    60% {
-        transform: translateX(-50%) translateY(-5px);
-    }
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        flex-direction: column;
-        background: transparent;
-        padding: 2rem 0;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .info-cards,
-    .skills-grid {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
-    }
-
-    .name {
-        font-size: 2rem;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
 }

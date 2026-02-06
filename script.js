@@ -7,7 +7,6 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-// Close menu on click
 document.querySelectorAll(".nav-link").forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
@@ -15,7 +14,6 @@ document.querySelectorAll(".nav-link").forEach(link => {
     });
 });
 
-// Scroll effect
 window.addEventListener("scroll", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
@@ -36,7 +34,6 @@ magneticItems.forEach(item => {
     });
 });
 
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -45,7 +42,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Typing effect
 const titleElement = document.querySelector('.title');
 const titleText = 'Frontend Developer';
 let index = 0;
