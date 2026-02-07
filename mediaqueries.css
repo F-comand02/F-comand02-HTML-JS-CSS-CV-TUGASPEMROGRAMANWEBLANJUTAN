@@ -75,6 +75,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+}
+
 /* =========================================================
    Responsive Bagian ABOUT
    ========================================================= */
