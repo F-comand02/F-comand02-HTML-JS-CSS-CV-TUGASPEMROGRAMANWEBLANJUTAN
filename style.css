@@ -635,6 +635,8 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .btn.neon {
@@ -676,9 +678,12 @@ section {
 .futuristic-contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
+    gap: 1rem;
     margin: 3rem auto 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; 
 }
 
 .contact-glass {
@@ -702,7 +707,7 @@ section {
 
 
 .contact-glass::before {
-    content: "";
+    content: "autoincrement";
     position: absolute;
     inset: 0;
     border-radius: inherit;
