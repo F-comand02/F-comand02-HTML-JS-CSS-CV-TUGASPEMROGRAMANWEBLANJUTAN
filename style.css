@@ -767,7 +767,7 @@ section {
 
 
 .contact-glass::before {
-    content: "autoincrement";
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
