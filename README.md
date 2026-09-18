@@ -68,9 +68,11 @@ Dalam project ini, saya telah mengimplementasikan:
 > [!IMPORTANT]
 > Masukkan screenshot hasil karya kamu di bawah ini untuk menarik perhatian!
 
-| Desktop View | Mobile View |
-| :--- | :--- |
-| ![Desktop Screenshot](https://via.placeholder.com/600x350?text=Tangkapan+Layar+Desktop) | ![Mobile Screenshot](https://via.placeholder.com/200x350?text=Tangkapan+Layar+Mobile) |
+| **Jenis** | **Gambar** |
+| :--- | :---: |
+| **Mobile** | ![Mobile](https://github.com/user-attachments/assets/ea3e1981-89f8-4362-8811-f78960f278e9)|
+| **Dekstop** | ![Dekstop](https://github.com/user-attachments/assets/b8236bf0-e959-418f-8ce4-26dc6b30f3ab)|
+
 
 ---
 
