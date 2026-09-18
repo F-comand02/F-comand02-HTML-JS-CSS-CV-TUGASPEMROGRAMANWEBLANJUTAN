@@ -22,15 +22,22 @@
             <span>Farel</span>Yamotaro Hia
         </a>
 
+        <div class="nav-tools">
+            <div class="lang-switcher" aria-label="Language switcher">
+                <button class="lang-btn active" data-lang="id" type="button">ID</button>
+                <button class="lang-btn" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#certificates" class="nav-link">Certificates</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+            <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#certificates" class="nav-link" data-i18n="nav.certificates">Certificates</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
-        <div class="nav-toggle" id="hamburger">
+        <div class="nav-toggle" id="hamburger" aria-label="Open menu">
             <span></span>
             <span></span>
         </div>
@@ -50,20 +57,19 @@
             </div>
 
             <div class="home-info">
-                <p class="intro">Hello, I’m</p>
+                <p class="intro" data-i18n="home.intro">Halo, Saya</p>
                 <h1 class="hero-name">Farel Yamotaro Hia</h1>
-                <p class="hero-role">Student of University of North Sumatra</p>
-                <p class="hero-role">Information Technology Student</p>
-                <p class="hero-role">FASILKOM-TI</p>
+                <p class="hero-role" data-i18n="home.role1">Student of University of North Sumatra</p>
+                <p class="hero-role" data-i18n="home.role2">Information Technology Student</p>
+                <p class="hero-role" data-i18n="home.role3">Fakultas Ilmu Komputer - Teknologi Informasi</p>
 
-                <p class="hero-desc">
-                    I design and build futuristic digital experiences
-                    with precision, performance, and passion on this website.
+                <p class="hero-desc" data-i18n="home.desc">
+                    Mahasiswa semester 3 di Universitas Sumatera Utara, jurusan Teknologi Informasi. Saya memiliki minat yang besar dalam pengembangan web dan desain UI/UX. Saya berkomitmen untuk terus belajar dan mengembangkan keterampilan saya dalam menciptakan pengalaman
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn neon">View Projects</a>
-                    <a href="#contact" class="btn outline">Contact Me</a>
+                    <a href="#projects" class="btn neon" data-i18n="home.viewProjects">View Projects</a>
+                    <a href="#contact" class="btn outline" data-i18n="home.contactMe">Contact Me</a>
                 </div>
 
                 <div class="hero-social">
@@ -76,16 +82,12 @@
         </div>
     </div>
 
-    <div class="scroll-indicator">
-        <i class="fas fa-chevron-down"></i>
-    </div>
-</section>
 
 <section id="about" class="about-section futuristic-about">
     <div class="container">
 
-        <p class="section-subtitle">Get To Know</p>
-        <h2 class="section-title light">About Me</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">Get To Know</p>
+        <h2 class="section-title light" data-i18n="about.title">About Me</h2>
 
         <div class="about-grid">
 
@@ -101,31 +103,28 @@
                 <div class="about-cards">
                     <div class="about-card">
                         <i class="fas fa-briefcase"></i>
-                        <h3>Experience</h3>
-                        <p>Second Semester<br><span>College Student</span></p>
+                        <h3 data-i18n="about.cardExperience">Pengalaman</h3>
+                        <p data-i18n="about.cardExperienceText">Semester 3<br><span>Mahasiswa Aktif</span></p>
                     </div>
 
                     <div class="about-card">
                         <i class="fas fa-project-diagram"></i>
-                        <h3>Projects</h3>
-                        <p>5+ Completed<br><span>Web & UI Projects</span></p>
+                        <h3 data-i18n="about.cardProject">Project</h3>
+                        <p data-i18n="about.cardProjectText">5+ Completed<br><span>Web & UI Projects</span></p>
                     </div>
 
                     <div class="about-card">
                         <i class="fas fa-user-graduate"></i>
-                        <h3>Education</h3>
-                        <p>Information Technology<br><span>Self & Project Learning</span></p>
+                        <h3 data-i18n="about.cardEducation">Pendidikan</h3>
+                        <p data-i18n="about.cardEducationText">Information Technology<br><span>Pembelajaran diri dan projek</span></p>
                     </div>
                 </div>
 
-                <p class="about-text">
-                    I am a frontend developer passionate about crafting futuristic,
-                    high-performance, and visually stunning digital experiences.
-                    I focus on clean code and make a better website experience, accessibility, and modern UI principles
-                    to deliver meaningful products.
+                <p class="about-text" data-i18n="about.text">
+                   Saya merupakan seorang developer web yang sedang menempuh pendidikan di Universitas Sumatera Utara. Saya memiliki minat yang besar dalam pengembangan web dan desain UI/UX. Saya berkomitmen untuk terus belajar dan mengembangkan keterampilan saya dalam menciptakan pengalaman pengguna yang menarik
                 </p>
 
-                <a href="#projects" class="btn neon">Explore Projects</a>
+                <a href="#projects" class="btn neon" data-i18n="about.explore">Explore Projects</a>
             </div>
 
         </div>
@@ -134,8 +133,8 @@
 
 <section id="experience" class="experience-section futuristic-experience">
     <div class="container">
-    <p class="section-subtitle">What I Can Do</p>
-        <h2 class="section-title light">Experience</h2>
+    <p class="section-subtitle" data-i18n="experience.subtitle">What I Can Do</p>
+        <h2 class="section-title light" data-i18n="experience.title">Experience</h2>
 
         <div class="experience-grid">
             <div class="exp-card">
@@ -221,8 +220,8 @@
   
 <section id="projects" class="projects-section futuristic">
     <div class="container">
-        <p class="section-subtitle">Explore My Work</p>
-        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Explore My Work</p>
+        <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
 
         <div class="projects-grid futuristic-grid">
 
@@ -230,8 +229,8 @@
                 <div class="project-image">
                     <img src="Foto/Project1.png" alt="Project One">
                 </div>
-                <h3>Explore Bandung</h3>
-                <p class="project-desc">
+                <h3 data-i18n="project.exporeBandung">Explore Bandung</h3>
+                <p class="project-desc" data-i18n="project.exporeBandungDesc">
                     Website to explore tourist attractions in Bandung City.
                 </p>
                 <div class="project-actions">
@@ -244,8 +243,8 @@
                 <div class="project-image">
                     <img src="Foto/Project2.png" alt="Project Two">
                 </div>
-                <h3>Zurve-Tenaga Ahli</h3>
-                <p class="project-desc">
+                <h3 data-i18n="project.zurve">Zurve-Tenaga Ahli</h3>
+                <p class="project-desc" data-i18n="project.zurveDesc">
                     Website for managing expert workforce services.
                 </p>
                 <div class="project-actions">
@@ -258,13 +257,27 @@
                 <div class="project-image">
                     <img src="Foto/Project3.png" alt="Project Three">
                 </div>
-                <h3>Design-Figma</h3>
-                <p class="project-desc">
+                <h3 data-i18n="project.designFigma">Design-Figma</h3>
+                <p class="project-desc" data-i18n="project.designFigmaDesc">
                     Figma design project for GDGoC Community website.
                 </p>
                 <div class="project-actions">
                     <a href="https://www.figma.com/make/qHmQogcvYRPpDnaM2tZfEK/GDGoC--Community-?fullscreen=1&t=i3JC99YDtELGOWH0-1" class="btn neon">Demo</a>
                     <a href="https://www.figma.com/make/qHmQogcvYRPpDnaM2tZfEK/GDGoC--Community-?fullscreen=1&t=i3JC99YDtELGOWH0-1" class="btn outline">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project-card futuristic-card">
+                <div class="project-image">
+                    <img src="Foto/Project4.png" alt="Project Three">
+                </div>
+                <h3 data-i18n="project.hosting">Website-Hosting</h3>
+                <p class="project-desc" data-i18n="project.hostingDesc">
+                    Website hosting project for Competiton Id Community.
+                </p>
+                <div class="project-actions">
+                    <a href="https://kemerdekaancomunity.my.id/" class="btn neon">Demo</a>
+                    <a href="https://github.com/F-comand02/TIM-MERDEKA-IDCOMMUNITY" class="btn outline">GitHub</a>
                 </div>
             </article>
         </div>
@@ -273,84 +286,100 @@
 
 <section id="certificates" class="projects-section futuristic">
     <div class="container">
-        <p class="section-subtitle">Explore My Certification</p>
-        <h2 class="section-title">Certificates</h2>
+        <p class="section-subtitle" data-i18n="certificates.subtitle">Explore My Certification</p>
+        <h2 class="section-title" data-i18n="certificates.title">Certificates</h2>
 
-<div class="cert-grid futuristic-grid">
-        
-        <article class="cert-card futuristic-card">
-            <div class="cert-icon">
-                <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Belajar Dasar AI</h3>
-            <p class="cert-issuer">Dicoding Course Belajar Dasar AI</p>
-            <p class="cert-desc">Foundational knowledge in artificial intelligence and machine learning.</p>
-            <div class="cert-actions">
-                <a href="https://www.dicoding.com/certificates/2VX3591LJPYQ" class="btn outline small">View Certificate</a>
-            </div>
-        </article>
+        <div class="cert-grid futuristic-grid">
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/AndroidMobilePrograming.jpeg" alt="Android Mobile Programming certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.android">Android Mobile Programming</h3>
+                    <p class="cert-issuer">Google Developer Groups On Campus</p>
+                    <p class="cert-desc" data-i18n="cert.androidDesc">Completed the Android Mobile Programming pathway and developed practical mobile app skills through guided learning.</p>
+                </div>
+            </article>
 
-        <article class="cert-card futuristic-card">
-            <div class="cert-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h3>Web Development Bootcamp</h3>
-            <p class="cert-issuer">DEBUG IT</p>
-            <p class="cert-desc">Mastering modern HTML5, CSS3, and JavaScript best practices.</p>
-            <div class="cert-actions">
-                <a href="https://drive.google.com/file/d/1Q7xPLY5bJufkMcViW1MLIeDV7X8iGBgQ/view?usp=drivesdk" class="btn outline small">View Certificate</a>
-            </div>
-        </article>
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/BestProjectCyber.jpeg" alt="Best Project in Cybersecurity certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.cyberBest">Best Project in Cybersecurity</h3>
+                    <p class="cert-issuer">GDGoC USU</p>
+                    <p class="cert-desc" data-i18n="cert.cyberBestDesc">Recognized for delivering the best final project in the cybersecurity pathway with strong technical execution and dedication.</p>
+                </div>
+            </article>
 
-        <article class="cert-card futuristic-card">
-            <div class="cert-icon">
-                <i class="fab fa-figma"></i>
-            </div>
-            <h3>UI/UX Design Essentials</h3>
-            <p class="cert-issuer">GDGoC USU</p>
-            <p class="cert-desc">Professional training in user experience design and prototyping with Figma.</p>
-            <div class="cert-actions">
-                <a href="https://drive.google.com/file/d/1X9-otduS0StFeJiBCSN5v0p8M8GpLeXC/view?usp=drivesdk" class="btn outline small">View Certificate</a>
-            </div>
-        </article>
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/Cyber.jpeg" alt="Cybersecurity certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.cyber">Cybersecurity Pathway</h3>
+                    <p class="cert-issuer">Google Developer Groups On Campus</p>
+                    <p class="cert-desc" data-i18n="cert.cyberDesc">Earned this certificate after successfully finishing the cybersecurity learning path and assessment stages.</p>
+                </div>
+            </article>
 
-        <article class="cert-card futuristic-card">
-            <div class="cert-icon">
-                <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3>AI-Powered Performence Ads Certification</h3>
-            <p class="cert-issuer">GOOGLE</p>
-            <p class="cert-desc">Advanced training in leveraging AI for performance advertising optimization.</p>
-            <div class="cert-actions">
-                <a href="https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fskillshop%2Ecredential%2Enet%2Ffb37a829-dd99-47b4-adee-41ef3b08373c&urlhash=WvfK&isSdui=true" class="btn outline small">View Certificate</a>
-            </div>
-        </article>
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/MachineLearning.jpeg" alt="Machine Learning certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.ml">Machine Learning Pathway</h3>
+                    <p class="cert-issuer">Google Developer Groups On Campus</p>
+                    <p class="cert-desc" data-i18n="cert.mlDesc">Completed the machine learning pathway with strong understanding in core AI concepts and practical problem solving.</p>
+                </div>
+            </article>
 
-        <article class="cert-card futuristic-card">
-            <div class="cert-icon">
-                <i class="fas fa-database"></i>
-            </div>
-            <h3>Manage GA4 Data and Learn To Read Reports</h3>
-            <p class="cert-issuer">GOOGLE</p>
-            <p class="cert-desc">Comprehensive training in managing Google Analytics 4 data and interpreting key performance reports.</p>
-            <div class="cert-actions">
-                <a href="https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fskillshop%2Ecredential%2Enet%2Fcfc39dea-f992-426e-afa5-73d75bf3d62d&urlhash=bACJ&isSdui=true" class="btn outline small">View Certificate</a>
-            </div>
-        </article>
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/UIUX.jpeg" alt="UI/UX certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.uiux">UI/UX Pathway</h3>
+                    <p class="cert-issuer">Google Developer Groups On Campus</p>
+                    <p class="cert-desc" data-i18n="cert.uiuxDesc">Developed design thinking and user-centered interface skills through the UI/UX learning pathway and project completion.</p>
+                </div>
+            </article>
+
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/Web.jpeg" alt="Web Pathway certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.web">Web Pathway</h3>
+                    <p class="cert-issuer">Google Developer Groups On Campus</p>
+                    <p class="cert-desc" data-i18n="cert.webDesc">Finished the web development pathway by building and refining skills in frontend technologies and digital product creation.</p>
+                </div>
+            </article>
+
+            <article class="cert-card futuristic-card">
+                <div class="cert-visual">
+                    <img src="Foto/Juara II Website.jpeg" alt="Juara II Website competition certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 data-i18n="cert.juara">Juara II Website Competition</h3>
+                    <p class="cert-issuer">ID Community Medan</p>
+                    <p class="cert-desc" data-i18n="cert.juaraDesc">Won second place in the ID Community Website Competition for impactful contributions and strong creativity in digital product development.</p>
+                </div>
+            </article>
+        </div>
     </div>
-</div>
 </section>
 
 <section id="contact" class="contact-section futuristic">
     <div class="container">
-        <p class="section-subtitle">Let’s Connect</p>
-        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Let’s Connect</p>
+        <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
 
         <div class="futuristic-contact">
             <a href="mailto:yamotarohiafarel@gmail.com" class="contact-glass">
                 <i class="fas fa-envelope"></i>
                 <div>
-                    <span>Email</span>
+                    <span data-i18n="contact.emailLabel">Email</span>
                     <strong class="email-text">
                         farelyamotaro@students.usu.ac.id
                     </strong>
@@ -382,7 +411,7 @@
 
             <div class="footer-brand">
                 <h3>Farel Yamotaro Hia</h3>
-                <p>Portofolio Futuristic And Friendly</p>
+                <p data-i18n="footer.portfolio">My Portfolio</p>
             </div>
 
             <ul class="footer-links">
@@ -402,7 +431,7 @@
         </div>
 
         <p class="footer-copy">
-            © 2026 Farel Yamotaro Hia — Crafted with precision & passion
+            © 2026 Farel Yamotaro Hia
         </p>
     </div>
 </footer>
