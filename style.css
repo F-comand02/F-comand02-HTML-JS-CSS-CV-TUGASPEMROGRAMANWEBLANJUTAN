@@ -1,6 +1,4 @@
-/* =========================================================
-   Ini Reset & Base
-   ========================================================= */
+
 *,
 *::before,
 *::after {
@@ -9,9 +7,7 @@
     box-sizing: border-box;
 }
 
-/* =========================================================
-   Alat Root
-   ========================================================= */
+
 :root {
     --bg-main: #0a0a0a;
     --bg-soft: #111;
@@ -33,9 +29,7 @@
     --radius-sm: .75rem;
 }
 
-/* =========================================================
-   HTML & Body
-   ========================================================= */
+
 html {
     scroll-behavior: smooth;
 }
@@ -72,18 +66,14 @@ body.light-theme {
     color: var(--text-main);
 }
 
-/* =========================================================
-   CONTAINER
-   ========================================================= */
+
 .container {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 2rem;
 }
 
-/* =========================================================
-   Element Global
-   ========================================================= */
+
 img {
     max-width: 100%;
     display: block;
@@ -106,15 +96,13 @@ section {
     padding: 8rem 0 4rem;
 }
 
-/* =========================================================
-   SELECTION & SCROLLBAR 
-   ========================================================= */
+
 ::selection {
     background: rgba(255,255,255,.2);
     color: #fff;
 }
 
-/* Webkit scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -133,9 +121,7 @@ section {
 }
 
 
-/* =========================================================
-   Bagian Navbar
-   ========================================================= */
+
 .futuristic-nav {
     position: fixed;
     top: 1.2rem;
@@ -299,9 +285,7 @@ section {
     transition: .4s;
 }
 
-/* =========================================================
-   Skroll
-   ========================================================= */
+
 .futuristic-nav.scrolled {
     background: rgba(10,10,10,.85);
     box-shadow:
@@ -309,9 +293,7 @@ section {
         0 0 25px rgba(255,255,255,.12);
 }
 
-/* =========================================================
-   Bagian Section Global
-   ========================================================= */
+
 section {
     min-height: 100vh;
     padding: 8rem 0 4rem;
@@ -341,9 +323,7 @@ section {
     animation: bounce 2s infinite;
 }
 
-/* =========================================================
-   HOME
-   ========================================================= */
+
 .futuristic-home {
     background:
         radial-gradient(circle at top right, rgba(255,255,255,.08), transparent 40%),
@@ -360,9 +340,7 @@ section {
     gap: 4rem;
 }
 
-/* =========================================================
-   Bagian Visual
-   ========================================================= */
+
 .profile-orbit {
     position: relative;
     width: 360px;
@@ -393,9 +371,7 @@ section {
     animation: rotate 18s linear infinite;
 }
 
-/* =========================================================
-   Bagian Info
-   ========================================================= */
+
 .home-info {
     max-width: 520px;
 }
@@ -431,9 +407,7 @@ section {
     margin-bottom: 2rem;
 }
 
-/* =========================================================
-   Bagian Aksi & Pernyataan
-   ========================================================= */
+
 .hero-actions {
     display: flex;
     gap: 1.2rem;
@@ -464,9 +438,7 @@ section {
         0 0 40px rgba(255,255,255,.6);
 }
 
-/* =========================================================
-   Bagian ABOUT
-   ========================================================= */
+
 .futuristic-about {
     background:
         radial-gradient(circle at top left, rgba(255,255,255,.06), transparent 40%),
@@ -481,9 +453,7 @@ section {
     align-items: center;
 }
 
-/* =========================================================
-   About-Gambar
-   ========================================================= */
+
 .about-frame {
     position: relative;
     border-radius: 2rem;
@@ -511,9 +481,7 @@ section {
     filter: grayscale(20%);
 }
 
-/* =========================================================
-   Isi Website Bagian About
-   ========================================================= */
+
 .section-title.light {
     color: #fff;
 }
@@ -570,9 +538,7 @@ section {
     margin-bottom: 2rem;
 }
 
-/* =========================================================
-   Bagian EXPERIENCE
-   ========================================================= */
+
 .futuristic-experience {
     background:
         radial-gradient(circle at bottom right, rgba(255,255,255,.06), transparent 45%),
@@ -641,9 +607,7 @@ section {
     opacity: .7;
 }
 
-/* =========================================================
-   FUTURISTIC PROJECTS
-   ========================================================= */
+
 .projects-section.futuristic {
     background:
         radial-gradient(circle at top, rgba(53,53,53,0.15), transparent 40%),
@@ -749,9 +713,7 @@ section {
     background: rgba(255,255,255,.1);
 }
 
-/* =========================================================
-   Bagian Sertifikasi 
-   ========================================================= */
+
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -848,9 +810,7 @@ section {
     }
 }
 
-/* =========================================================
-   Bagian CONTACT
-   ========================================================= */
+
 .contact-section.futuristic {
     background:
         radial-gradient(circle at bottom, rgba(255,255,255,.08), transparent 40%),
@@ -966,9 +926,7 @@ section {
     }
 }
 
-/* =========================================================
-   Bagian FOOTER
-   ========================================================= */
+
 .futuristic-footer {
     background:
         radial-gradient(circle at top, rgba(255,255,255,.08), transparent 45%),

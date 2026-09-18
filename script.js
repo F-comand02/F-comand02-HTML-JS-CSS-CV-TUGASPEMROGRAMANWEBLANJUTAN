@@ -218,7 +218,7 @@ const translations = {
         'projects.title': 'Featured Projects',
         'certificates.subtitle': 'Explore My Certification',
         'certificates.title': 'Certificates',
-        'contact.subtitle': 'Let’s Connect',
+        'contact.subtitle': 'Letâ€™s Connect',
         'contact.title': 'Contact Me',
         'contact.emailLabel': 'Email',
         'footer.portfolio': 'My Portfolio',
